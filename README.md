@@ -125,6 +125,15 @@ This is an example of how to list things you need to use the software and how to
    ```sh
     sudo update-grub2
    ```
+10. OR copy paste all
+    ```sh
+   git clone https://github.com/batann/plymouth.git
+   cd /usr/share/plymouth/themes/
+   sudo cp /home/$USER/plymouth/anon .
+   sudo plymouth-set-default-theme -R anon
+   sudo update-initramfs -u
+   sudo update-grub2
+    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
