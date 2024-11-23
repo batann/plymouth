@@ -1,6 +1,6 @@
 # Anon Plymouth
-### **forked from https://github.com/offensive-hub/plymouth-anonymous.git*
-<code>:s!readme! !g</code>
+###### *forked from https://github.com/offensive-hub/plymouth-anonymous.git*
+
 <a id="readme-top"></a>
 
 <!-- PROJECT LOGO -->
