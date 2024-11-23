@@ -101,25 +101,31 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/batann/readme.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin batann/readme
-   git remote -v # confirm the changes
-   ```
 
+1. Clone the repo
+   ```sh
+   git clone https://github.com/batann/plymouth.git
+   ```
+2. Cd to Directory
+   ```sh
+   cd /usr/share/plymouth/themes/
+   ```
+4. Copy the anon directory
+   ```sh
+   sudo cp /home/$USER/plymouth/anon .
+   ```
+5. Set Default Theme
+   ```sh
+    sudo plymouth-set-default-theme -R anon
+   ```
+6. Update initramfz
+    ```sh
+    sudo update-initramfs -u
+    ```
+7. Updare Grub2
+   ```sh
+    sudo update-grub2
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
